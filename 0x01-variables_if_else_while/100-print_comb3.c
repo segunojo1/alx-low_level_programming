@@ -7,24 +7,27 @@
 
 int main(void)
 {
-	int num;
+	int firstNum;
+	int secondNum;
 
-	for (num = 0; num <= 89; num++)
+	for (firstNum = 0; firstNum <= 9; firstNum++)
 	{
-		if (num < 10)
+		for (secondNum = firstNum + 1; secondNum <= 9; secondNum++)
 		{
-			putchar('0' + '0' + num);
-		}
-		else
-		{
-			putchar('0' + num);
-		}
-		if (num < 89)
-		{
-			putchar(',');
-			putchar(' ');
+			putchar('0' + firstNum);
+			putchar('0' + secondNum);
+
+			if (firstNum == 8 && secondNum == 9)
+			{
+				putchar('\n');
+			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
 		}
 	}
-	putchar('\n');
+
 	return (0);
 }
