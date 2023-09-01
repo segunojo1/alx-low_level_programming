@@ -2,11 +2,10 @@
 #include "main.h"
 
 /**
- * main - prints all arguments it receives
- * @argc: number of arguments
- * @argv: array of arguments
+ * _atoi - converts a string to an integer
+ * @s: string to be converted
  *
- * Return: Always 0 (Success)
+ * Return: the int converted from the string
  */
 int _atoi(char *s)
 {
