@@ -1,7 +1,11 @@
 #ifndef VARIADIC_FUNCTIONS_H
 #define VARIADIC_FUNCTIONS_H
 #include <stdarg.h>
-
+/**
+ * struct printer - printer
+ * @symbol: symbol
+ * @print: print
+ */
 typedef struct printer
 {
 	char *symbol;
